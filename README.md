@@ -78,8 +78,7 @@ ev3_brick.Led(color='red', type='flash')
 # Turn off the LED
 ev3_brick.Led(color='red', type='off')
 ```
-[!NOTE]
-> The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
+**Note**: The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
 
 ### Sound Control
 Play sounds through the EV3:
@@ -89,8 +88,7 @@ s = ev3_brick.Sound(volume=80)
 s.play_tone("c")
 s.play_sound('path to sound file')
 ```
-[!NOTE]
-> The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
+>**Note**: The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
 
 ### Voice Control
 Interact with the EV3 using voice commands:
