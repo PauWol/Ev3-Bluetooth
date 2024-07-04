@@ -1,7 +1,7 @@
 import ev3_dc as ev3
 import keyboard , sys , time
 
-MACADDRESS = '00:16:53:48:08:C8'
+MACADDRESS = 'xx:xx:xx:xx:xx:xx'
 
 my_ev3 = ev3.EV3(protocol=ev3.BLUETOOTH, host=MACADDRESS)
 motor_d = ev3.Motor(ev3.PORT_D,protocol=ev3.BLUETOOTH,ev3_obj=my_ev3)
