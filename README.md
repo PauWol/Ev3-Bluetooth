@@ -78,7 +78,7 @@ ev3_brick.Led(color='red', type='flash')
 # Turn off the LED
 ev3_brick.Led(color='red', type='off')
 ```
-**Note**: The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
+>**Note**: The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
 
 ### Sound Control
 Play sounds through the EV3:
