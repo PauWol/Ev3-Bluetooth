@@ -29,18 +29,18 @@ pip install ev3_dc
 
 To initialize the connection with the EV3 robot, you need to provide the MAC address of the EV3 brick.
 
-´´´
+```python
 import ev3_dc as ev3
 
  Initialize the EV3 Bluetooth connection
 ev3_brick = EV3_Bluetooth(macaddress='00:16:53:AB:C3:D4')
-´´´
+```
 
 ### Motor Control
 
 Control motors connected to the EV3:
 
-´´´
+```python
 # Initialize motor on port 'A'
 motor_A = ev3_brick.Motor(port='A')
 
@@ -49,4 +49,4 @@ motor_A.run(direction=1, speed=50)
 
 # Stop the motor
 motor_A.stop()
-´´´
+```
