@@ -32,11 +32,11 @@ To initialize the connection with the EV3 robot, you need to provide the MAC add
 ´´´bash
 import ev3_dc as ev3
 
-# Initialize the EV3 Bluetooth connection
+ Initialize the EV3 Bluetooth connection
 ev3_brick = EV3_Bluetooth(macaddress='00:16:53:AB:C3:D4')
 ´´´
 
-###Motor Control
+### Motor Control
 
 Control motors connected to the EV3:
 
