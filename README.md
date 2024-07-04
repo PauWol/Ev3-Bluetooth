@@ -32,7 +32,7 @@ To initialize the connection with the EV3 robot, you need to provide the MAC add
 ```python
 import ev3_dc as ev3
 
- Initialize the EV3 Bluetooth connection
+#Initialize the EV3 Bluetooth connection
 ev3_brick = EV3_Bluetooth(macaddress='00:16:53:AB:C3:D4')
 ```
 
@@ -49,4 +49,68 @@ motor_A.run(direction=1, speed=50)
 
 # Stop the motor
 motor_A.stop()
+```
+
+### Sensor Control
+Read data from sensors connected to the EV3:
+
+```python
+# Initialize color sensor on port 1
+color_sensor = ev3_brick.Sensor(port=1, type='color')
+
+# Get color sensor value
+color_value = color_sensor.get_color()
+
+# Initialize touch sensor on port 2
+touch_sensor = ev3_brick.Sensor(port=2, type='touch')
+
+# Check if touch sensor is pressed
+is_pressed = touch_sensor.is_pressed()
+```
+
+### LED Control
+Control the integrated LED on the EV3 brick:
+
+```python
+# Set LED to red and flash
+ev3_brick.Led(color='red', type='flash')
+
+# Turn off the LED
+ev3_brick.Led(color='red', type='off')
+```
+[!NOTE]
+> The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
+
+### Sound Control
+Play sounds through the EV3:
+
+```python
+s = ev3_brick.Sound(volume=80)
+s.play_tone("c")
+s.play_sound('path to sound file')
+```
+[!NOTE]
+> The following feature is currently not functioning properly due to its incomplete development, and there are no plans to finish it.
+
+### Voice Control
+Interact with the EV3 using voice commands:
+
+```python
+#Not realy finished to be used!!!
+```
+
+### Status Monitoring
+Monitor the status of connected sensors and motors:
+
+```python
+# Initialize status monitoring
+status = ev3_brick.Status()
+
+# Get sensor and motor data
+sensor_data = status.get_sensor_data()
+motor_data = status.get_motor_data()
+
+# Print sensor and motor status
+print("Sensor Data:", sensor_data)
+print("Motor Data:", motor_data)
 ```
