@@ -13,7 +13,6 @@ This library provides a simple interface for connecting to and controlling a LEG
   - [Sound Control](#sound-control)
   - [Voice Control](#voice-control)
   - [Status Monitoring](#status-monitoring)
-- [License](#license)
 
 ## Installation
 
