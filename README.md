@@ -104,8 +104,8 @@ Monitor the status of connected sensors and motors:
 status = ev3_brick.Status()
 
 # Get sensor and motor data
-sensor_data = status.get_sensor_data()
-motor_data = status.get_motor_data()
+sensor_data = status.get_sensor_data
+motor_data = status.get_motor_data
 
 # Print sensor and motor status
 print("Sensor Data:", sensor_data)
