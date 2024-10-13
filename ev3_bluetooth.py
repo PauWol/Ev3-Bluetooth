@@ -315,7 +315,7 @@ class EV3_Bluetooth():
                             if ischar:
                                 setattr(self,k,self.motor(str(digit)))
                             else:
-                                setattr(self, k, self.sensor(digit,str(v)))
+                                setattr(self, k, self.sensor(int(digit),str(v)))
                             r['data_'+str(digit)] = self.get_value_from_instance(str(v),k)
                         else:
                             r['data_'+str(digit)] = v
