@@ -29,7 +29,7 @@ pip install ev3_dc
 To initialize the connection with the EV3 robot, you need to provide the MAC address of the EV3 brick.
 
 ```python
-import ev3_bluetooth as ev3
+from ev3_bluetooth import EV3_Bluetooth
 
 #Initialize the EV3 Bluetooth connection
 ev3_brick = EV3_Bluetooth(macaddress='00:16:53:AB:C3:D4')
